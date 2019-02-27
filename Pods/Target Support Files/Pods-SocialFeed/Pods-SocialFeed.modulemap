@@ -1,0 +1,6 @@
+module Pods_SocialFeed {
+  umbrella header "Pods-SocialFeed-umbrella.h"
+
+  export *
+  module * { export * }
+}

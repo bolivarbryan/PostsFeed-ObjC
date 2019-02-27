@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18CF560A72D516DC80F93553 /* libPods-SocialFeedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC85DFE6974B8A39DCC3C5A9 /* libPods-SocialFeedTests.a */; };
+		BFE7333B8D11D24355E813B4 /* libPods-SocialFeed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7BA390936FE0448578B9C1 /* libPods-SocialFeed.a */; };
+		F4C05C1E2225E31100262CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C1D2225E31100262CAE /* AppDelegate.m */; };
+		F4C05C272225E31100262CAE /* SocialFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C252225E31100262CAE /* SocialFeed.xcdatamodeld */; };
+		F4C05C292225E31200262CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C05C282225E31200262CAE /* Assets.xcassets */; };
+		F4C05C2C2225E31200262CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C05C2A2225E31200262CAE /* LaunchScreen.storyboard */; };
+		F4C05C2F2225E31200262CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C2E2225E31200262CAE /* main.m */; };
+		F4C05C392225E31200262CAE /* SocialFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C382225E31200262CAE /* SocialFeedTests.m */; };
+		F4C05C4D2225E44A00262CAE /* PostsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C4C2225E44A00262CAE /* PostsListViewController.m */; };
+		F4C05C4F2225E45B00262CAE /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C05C4E2225E45B00262CAE /* Posts.storyboard */; };
+		F4C05C5E2225E79900262CAE /* SFPost.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C5D2225E79900262CAE /* SFPost.m */; };
+		F4C05C692225E95700262CAE /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C682225E95700262CAE /* PostTableViewCell.m */; };
+		F4C05C6D2225EAEB00262CAE /* PostsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C05C6C2225EAEB00262CAE /* PostsListViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4C05C352225E31200262CAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4C05C112225E31100262CAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4C05C182225E31100262CAE;
+			remoteInfo = SocialFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E3D7E921D1A6C271C03A27 /* Pods-SocialFeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFeedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFeedTests/Pods-SocialFeedTests.release.xcconfig"; sourceTree = "<group>"; };
+		731FE316B0D474B95090C19C /* Pods-SocialFeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFeedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFeedTests/Pods-SocialFeedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7BA390936FE0448578B9C1 /* libPods-SocialFeed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialFeed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CCCF548A8F7285494CE165 /* Pods-SocialFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFeed/Pods-SocialFeed.release.xcconfig"; sourceTree = "<group>"; };
+		CC85DFE6974B8A39DCC3C5A9 /* libPods-SocialFeedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocialFeedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB50E655CBAFA082473190D5 /* Pods-SocialFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialFeed/Pods-SocialFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		F4C05C192225E31100262CAE /* SocialFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C05C1C2225E31100262CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4C05C1D2225E31100262CAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4C05C262225E31100262CAE /* SocialFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialFeed.xcdatamodel; sourceTree = "<group>"; };
+		F4C05C282225E31200262CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4C05C2B2225E31200262CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4C05C2D2225E31200262CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C05C2E2225E31200262CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4C05C342225E31200262CAE /* SocialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C05C382225E31200262CAE /* SocialFeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialFeedTests.m; sourceTree = "<group>"; };
+		F4C05C3A2225E31200262CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C05C4B2225E44A00262CAE /* PostsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsListViewController.h; sourceTree = "<group>"; };
+		F4C05C4C2225E44A00262CAE /* PostsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsListViewController.m; sourceTree = "<group>"; };
+		F4C05C4E2225E45B00262CAE /* Posts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Posts.storyboard; sourceTree = "<group>"; };
+		F4C05C5C2225E79900262CAE /* SFPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPost.h; sourceTree = "<group>"; };
+		F4C05C5D2225E79900262CAE /* SFPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPost.m; sourceTree = "<group>"; };
+		F4C05C672225E95700262CAE /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		F4C05C682225E95700262CAE /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		F4C05C6B2225EAEB00262CAE /* PostsListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsListViewModel.h; sourceTree = "<group>"; };
+		F4C05C6C2225EAEB00262CAE /* PostsListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsListViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4C05C162225E31100262CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE7333B8D11D24355E813B4 /* libPods-SocialFeed.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C05C312225E31200262CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CF560A72D516DC80F93553 /* libPods-SocialFeedTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23B43F015B2954FAFE19B4B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB50E655CBAFA082473190D5 /* Pods-SocialFeed.debug.xcconfig */,
+				A4CCCF548A8F7285494CE165 /* Pods-SocialFeed.release.xcconfig */,
+				731FE316B0D474B95090C19C /* Pods-SocialFeedTests.debug.xcconfig */,
+				08E3D7E921D1A6C271C03A27 /* Pods-SocialFeedTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4EDC064C8779A445FE758E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D7BA390936FE0448578B9C1 /* libPods-SocialFeed.a */,
+				CC85DFE6974B8A39DCC3C5A9 /* libPods-SocialFeedTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C05C102225E31100262CAE = {
+			isa = PBXGroup;
+			children = (
+				F4C05C1B2225E31100262CAE /* SocialFeed */,
+				F4C05C372225E31200262CAE /* SocialFeedTests */,
+				F4C05C1A2225E31100262CAE /* Products */,
+				23B43F015B2954FAFE19B4B4 /* Pods */,
+				A4EDC064C8779A445FE758E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4C05C1A2225E31100262CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C192225E31100262CAE /* SocialFeed.app */,
+				F4C05C342225E31200262CAE /* SocialFeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4C05C1B2225E31100262CAE /* SocialFeed */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C432225E36C00262CAE /* App */,
+				F4C05C2D2225E31200262CAE /* Info.plist */,
+				F4C05C2E2225E31200262CAE /* main.m */,
+				F4C05C252225E31100262CAE /* SocialFeed.xcdatamodeld */,
+			);
+			path = SocialFeed;
+			sourceTree = "<group>";
+		};
+		F4C05C372225E31200262CAE /* SocialFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C382225E31200262CAE /* SocialFeedTests.m */,
+				F4C05C3A2225E31200262CAE /* Info.plist */,
+			);
+			path = SocialFeedTests;
+			sourceTree = "<group>";
+		};
+		F4C05C432225E36C00262CAE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C472225E3E700262CAE /* Models */,
+				F4C05C442225E37100262CAE /* Common */,
+				F4C05C452225E3AA00262CAE /* Feature */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4C05C442225E37100262CAE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C1C2225E31100262CAE /* AppDelegate.h */,
+				F4C05C1D2225E31100262CAE /* AppDelegate.m */,
+				F4C05C282225E31200262CAE /* Assets.xcassets */,
+				F4C05C2A2225E31200262CAE /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4C05C452225E3AA00262CAE /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C482225E41D00262CAE /* PostsList */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		F4C05C472225E3E700262CAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C5B2225E78B00262CAE /* Post */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4C05C482225E41D00262CAE /* PostsList */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C6E2225FCC400262CAE /*  ViewModels */,
+				F4C05C4A2225E43400262CAE /* Views */,
+				F4C05C492225E42F00262CAE /* Controllers */,
+			);
+			path = PostsList;
+			sourceTree = "<group>";
+		};
+		F4C05C492225E42F00262CAE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C4B2225E44A00262CAE /* PostsListViewController.h */,
+				F4C05C4C2225E44A00262CAE /* PostsListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4C05C4A2225E43400262CAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C6A2225E95C00262CAE /* PostTableViewCell */,
+				F4C05C4E2225E45B00262CAE /* Posts.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4C05C5B2225E78B00262CAE /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C5C2225E79900262CAE /* SFPost.h */,
+				F4C05C5D2225E79900262CAE /* SFPost.m */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		F4C05C6A2225E95C00262CAE /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C672225E95700262CAE /* PostTableViewCell.h */,
+				F4C05C682225E95700262CAE /* PostTableViewCell.m */,
+			);
+			path = PostTableViewCell;
+			sourceTree = "<group>";
+		};
+		F4C05C6E2225FCC400262CAE /*  ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4C05C6B2225EAEB00262CAE /* PostsListViewModel.h */,
+				F4C05C6C2225EAEB00262CAE /* PostsListViewModel.m */,
+			);
+			path = " ViewModels";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4C05C182225E31100262CAE /* SocialFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C05C3D2225E31200262CAE /* Build configuration list for PBXNativeTarget "SocialFeed" */;
+			buildPhases = (
+				252DD6494F0FCBB025EAFB49 /* [CP] Check Pods Manifest.lock */,
+				F4C05C152225E31100262CAE /* Sources */,
+				F4C05C162225E31100262CAE /* Frameworks */,
+				F4C05C172225E31100262CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialFeed;
+			productName = SocialFeed;
+			productReference = F4C05C192225E31100262CAE /* SocialFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4C05C332225E31200262CAE /* SocialFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C05C402225E31200262CAE /* Build configuration list for PBXNativeTarget "SocialFeedTests" */;
+			buildPhases = (
+				553F73C441E0BE486EC1D33F /* [CP] Check Pods Manifest.lock */,
+				F4C05C302225E31200262CAE /* Sources */,
+				F4C05C312225E31200262CAE /* Frameworks */,
+				F4C05C322225E31200262CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4C05C362225E31200262CAE /* PBXTargetDependency */,
+			);
+			name = SocialFeedTests;
+			productName = SocialFeedTests;
+			productReference = F4C05C342225E31200262CAE /* SocialFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4C05C112225E31100262CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = BolivarBryan;
+				TargetAttributes = {
+					F4C05C182225E31100262CAE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F4C05C332225E31200262CAE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F4C05C182225E31100262CAE;
+					};
+				};
+			};
+			buildConfigurationList = F4C05C142225E31100262CAE /* Build configuration list for PBXProject "SocialFeed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4C05C102225E31100262CAE;
+			productRefGroup = F4C05C1A2225E31100262CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4C05C182225E31100262CAE /* SocialFeed */,
+				F4C05C332225E31200262CAE /* SocialFeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4C05C172225E31100262CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C05C4F2225E45B00262CAE /* Posts.storyboard in Resources */,
+				F4C05C2C2225E31200262CAE /* LaunchScreen.storyboard in Resources */,
+				F4C05C292225E31200262CAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C05C322225E31200262CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		252DD6494F0FCBB025EAFB49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		553F73C441E0BE486EC1D33F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialFeedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4C05C152225E31100262CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C05C6D2225EAEB00262CAE /* PostsListViewModel.m in Sources */,
+				F4C05C4D2225E44A00262CAE /* PostsListViewController.m in Sources */,
+				F4C05C1E2225E31100262CAE /* AppDelegate.m in Sources */,
+				F4C05C2F2225E31200262CAE /* main.m in Sources */,
+				F4C05C272225E31100262CAE /* SocialFeed.xcdatamodeld in Sources */,
+				F4C05C5E2225E79900262CAE /* SFPost.m in Sources */,
+				F4C05C692225E95700262CAE /* PostTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C05C302225E31200262CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C05C392225E31200262CAE /* SocialFeedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4C05C362225E31200262CAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4C05C182225E31100262CAE /* SocialFeed */;
+			targetProxy = F4C05C352225E31200262CAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4C05C2A2225E31200262CAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C05C2B2225E31200262CAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4C05C3B2225E31200262CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4C05C3C2225E31200262CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4C05C3E2225E31200262CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB50E655CBAFA082473190D5 /* Pods-SocialFeed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = SocialFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolivar.SocialFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4C05C3F2225E31200262CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CCCF548A8F7285494CE165 /* Pods-SocialFeed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = SocialFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolivar.SocialFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4C05C412225E31200262CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731FE316B0D474B95090C19C /* Pods-SocialFeedTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = SocialFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolivar.SocialFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialFeed.app/SocialFeed";
+			};
+			name = Debug;
+		};
+		F4C05C422225E31200262CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E3D7E921D1A6C271C03A27 /* Pods-SocialFeedTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K87XPR878Y;
+				INFOPLIST_FILE = SocialFeedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bolivar.SocialFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialFeed.app/SocialFeed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4C05C142225E31100262CAE /* Build configuration list for PBXProject "SocialFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C05C3B2225E31200262CAE /* Debug */,
+				F4C05C3C2225E31200262CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C05C3D2225E31200262CAE /* Build configuration list for PBXNativeTarget "SocialFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C05C3E2225E31200262CAE /* Debug */,
+				F4C05C3F2225E31200262CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C05C402225E31200262CAE /* Build configuration list for PBXNativeTarget "SocialFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C05C412225E31200262CAE /* Debug */,
+				F4C05C422225E31200262CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4C05C252225E31100262CAE /* SocialFeed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4C05C262225E31100262CAE /* SocialFeed.xcdatamodel */,
+			);
+			currentVersion = F4C05C262225E31100262CAE /* SocialFeed.xcdatamodel */;
+			path = SocialFeed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F4C05C112225E31100262CAE /* Project object */;
+}
