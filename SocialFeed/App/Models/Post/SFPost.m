@@ -53,6 +53,17 @@ static id map(id collection, id (^f)(id value)) {
 
 @implementation SFPost
 
+-(void)setNetwork:(NSString *)network {
+    
+    if ([network isEqualToString:@"facebook"]) {
+        self.networkValue = Facebook;
+    } else if ([network isEqualToString:@"twitter"]) {
+        self.networkValue = Twitter;
+    } else if ([network isEqualToString:@"instagram"]) {
+        self.networkValue = Instagram;
+    }
+}
+
 - (NSDate *)dateValue {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";

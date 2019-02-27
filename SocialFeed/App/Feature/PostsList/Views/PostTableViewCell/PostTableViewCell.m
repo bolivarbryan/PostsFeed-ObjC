@@ -52,6 +52,16 @@
     self.imageHeightConstraint.constant = UIScreen.mainScreen.bounds.size.height *  p;
     [self layoutIfNeeded];
 
+    switch (post.networkValue) {
+        case Twitter:
+            self.networkImageView.backgroundColor = [UIColor blueColor];
+            break;
+        case Facebook:
+            self.networkImageView.backgroundColor = [UIColor purpleColor];
+        case Instagram:
+            self.networkImageView.backgroundColor = [UIColor redColor];
+    }
+
 }
 
 - (void)awakeFromNib {

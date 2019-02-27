@@ -19,15 +19,22 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Object interfaces
 
 @interface SFPost : NSObject
+
+    typedef enum {
+        Facebook,
+        Instagram,
+        Twitter
+    } Network;
+
     @property (nonatomic, strong) SFAuthor *author;
     @property (nonatomic, copy)   NSString *date;
     @property (nonatomic, copy)   NSString *link;
     @property (nonatomic, strong) SFText *text;
     @property (nonatomic, strong) SFAttachment *attachment;
     @property (nonatomic, copy)   NSString *network;
-
     @property (nonatomic, copy)   NSDate *dateValue;
     @property (nonatomic, copy)   NSString *dateFormatted;
+    @property Network networkValue;
 
     + (instancetype)fromJSONDictionary:(NSDictionary *)dict;
 

@@ -138,7 +138,7 @@
                                             <outlet property="dateLabel" destination="dXJ-bw-pnl" id="H6h-P5-j1O"/>
                                             <outlet property="imageHeightConstraint" destination="yqq-fj-buc" id="T5v-Dd-PmC"/>
                                             <outlet property="nameLabel" destination="OC7-j6-49U" id="rfI-HD-By4"/>
-                                            <outlet property="networkLabel" destination="QKJ-An-DsL" id="0pp-jo-ryN"/>
+                                            <outlet property="networkImageView" destination="QKJ-An-DsL" id="0pp-jo-ryN"/>
                                             <outlet property="picture" destination="VSu-BW-mpK" id="7Bz-tB-ihj"/>
                                             <outlet property="postedImage" destination="pmf-Ht-LSE" id="eYr-dr-n5V"/>
                                             <outlet property="postedTextLabel" destination="buf-5d-zIu" id="yiO-XC-mN3"/>
