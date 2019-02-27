@@ -151,6 +151,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <connections>
+                                            <outlet property="bodytTextView" destination="nK7-di-GSp" id="GFj-Q1-ugo"/>
                                             <outlet property="dateLabel" destination="dXJ-bw-pnl" id="w52-vt-LB5"/>
                                             <outlet property="imageHeightConstraint" destination="yqq-fj-buc" id="T5v-Dd-PmC"/>
                                             <outlet property="nameLabel" destination="OC7-j6-49U" id="rfI-HD-By4"/>
@@ -158,7 +159,6 @@
                                             <outlet property="picture" destination="VSu-BW-mpK" id="7Bz-tB-ihj"/>
                                             <outlet property="postedImage" destination="pmf-Ht-LSE" id="eYr-dr-n5V"/>
                                             <outlet property="postedTextLabel" destination="buf-5d-zIu" id="yiO-XC-mN3"/>
-                                            <outlet property="postedTextTextView" destination="nK7-di-GSp" id="Yd2-sj-3gG"/>
                                             <outlet property="usernameLabel" destination="l5f-tL-AKv" id="Dvx-Px-IfH"/>
                                             <outlet property="verifiedLabel" destination="3Ib-W8-WBa" id="Bxs-u0-VzD"/>
                                         </connections>

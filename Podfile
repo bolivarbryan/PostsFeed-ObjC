@@ -6,7 +6,6 @@ target 'SocialFeed' do
   # use_frameworks!
 
   # Pods for SocialFeed
-  pod 'TTTAttributedLabel'
   pod 'SDWebImage', '~> 4.0'
 
   target 'SocialFeedTests' do

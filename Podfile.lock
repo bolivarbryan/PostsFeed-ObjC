@@ -2,21 +2,17 @@ PODS:
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
   - SDWebImage/Core (4.4.5)
-  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - SDWebImage (~> 4.0)
-  - TTTAttributedLabel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SDWebImage
-    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
-  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 17fd631b17bd046a2bf6a930bbbf5ecf494fee42
+PODFILE CHECKSUM: 5ca407b6e8a1e00ec9d19afd228d7503400f4925
 
 COCOAPODS: 1.5.3

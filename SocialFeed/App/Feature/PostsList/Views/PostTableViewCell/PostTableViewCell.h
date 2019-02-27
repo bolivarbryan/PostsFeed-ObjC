@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *postedImage;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
-@property (weak, nonatomic) IBOutlet UITextView *postedTextTextView;
+@property (weak, nonatomic) IBOutlet UITextView *bodytTextView;
 @property (weak, nonatomic) IBOutlet UILabel *verifiedLabel;
 
 @end

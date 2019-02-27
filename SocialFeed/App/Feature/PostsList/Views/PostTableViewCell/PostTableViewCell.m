@@ -84,7 +84,7 @@
                                     [[post.text.markup objectAtIndex:i] length]);
         [attributedText applyAttributeWithText: post.text.plain range:range link: [post.text.markup objectAtIndex:i].link];
     }
-    self.postedTextTextView.attributedText = attributedText;
+    self.bodytTextView.attributedText = attributedText;
 }
 
 @end
