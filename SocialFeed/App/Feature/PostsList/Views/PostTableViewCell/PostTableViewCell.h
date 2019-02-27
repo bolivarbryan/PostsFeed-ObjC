@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "SFPost.h"
+#import <CoreText/CoreText.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,9 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
     @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
     @property (weak, nonatomic) IBOutlet UIImageView *postedImage;
     @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
-    @property (weak, nonatomic) IBOutlet NSLayoutConstraint *ratioConstraint;
-    @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imagewidthConstraint;
-
 @end
 
 NS_ASSUME_NONNULL_END

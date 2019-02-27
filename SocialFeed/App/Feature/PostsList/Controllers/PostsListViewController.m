@@ -22,6 +22,8 @@
     [self.viewModel fetchPosts];
 }
 
+//MARK: - UITableViewDatasource & UITableViewDelegate
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PostTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PostTableViewCell"];
     cell.post = [self.viewModel.posts objectAtIndex:indexPath.row];
@@ -40,13 +42,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated: YES];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
+//MARK: - PostsListViewModelDelegate
+
 - (void)networkDidFetchPosts:(NSArray *)posts {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
     });
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
-}
 @end
