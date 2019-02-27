@@ -15,7 +15,7 @@
     self.nameLabel.text = post.author.name;
     self.usernameLabel.text = post.author.accountValue;
     self.dateLabel.text = [NSString stringWithFormat:@"%@", post.dateFormatted];
-
+    self.postedTextLabel.text = post.text.plain;
     [self.picture sd_setImageWithURL:[NSURL URLWithString: post.author.pictureLink]
                     placeholderImage:[[UIImage alloc] init]];
 
@@ -25,7 +25,7 @@
                                completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
                                    dispatch_async(dispatch_get_main_queue(), ^{
                                        if (image.size.height != post.attachment.height) {
-                                           [self updateImageFrameWithHeight: image.size.height width: image.size.height];
+                                           [self updateImageFrameWithHeight: image.size.height width: image.size.width];
                                        }
                                    });
                                }];
@@ -85,8 +85,6 @@
                                     [[post.text.markup objectAtIndex:i] length]);
         [attributedText applyAttributeWithText: post.text.plain range:range link: [post.text.markup objectAtIndex:i].link];
     }
-
-    self.postedTextLabel.attributedText = attributedText;
     self.postedTextTextView.attributedText = attributedText;
 }
 
