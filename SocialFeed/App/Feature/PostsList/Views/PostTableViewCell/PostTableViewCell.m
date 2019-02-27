@@ -74,15 +74,20 @@
     }
 }
 - (void)applyTextAttributes: (SFPost *)post {
-    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString: post.text.plain attributes: nil];
+    NSDictionary *attribs = @{
+                              NSForegroundColorAttributeName: self.postedTextLabel.textColor,
+                              NSFontAttributeName: self.postedTextLabel.font
+                              };
+    NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString: post.text.plain attributes: attribs];
 
     for (NSInteger i = 0; i < post.text.markup.count; i++ ) {
         NSRange range = NSMakeRange([[post.text.markup objectAtIndex:i] location],
                                     [[post.text.markup objectAtIndex:i] length]);
-        [attributedText applyAttributeWithText: post.text.plain range:range];
+        [attributedText applyAttributeWithText: post.text.plain range:range link: [post.text.markup objectAtIndex:i].link];
     }
 
     self.postedTextLabel.attributedText = attributedText;
+    self.postedTextTextView.attributedText = attributedText;
 }
 
 @end

@@ -14,15 +14,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PostTableViewCell : UITableViewCell
-    @property (weak, nonatomic) SFPost* post;
-    @property (weak, nonatomic) IBOutlet UIImageView *picture;
-    @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-    @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
-    @property (weak, nonatomic) IBOutlet UIImageView *networkImageView;
-    @property (weak, nonatomic) IBOutlet UILabel *postedTextLabel;
-    @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-    @property (weak, nonatomic) IBOutlet UIImageView *postedImage;
-    @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
+
+@property (weak, nonatomic) SFPost* post;
+@property (weak, nonatomic) IBOutlet UIImageView *picture;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *networkImageView;
+@property (weak, nonatomic) IBOutlet UILabel *postedTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *postedImage;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
+@property (weak, nonatomic) IBOutlet UITextView *postedTextTextView;
+@property (weak, nonatomic) IBOutlet UILabel *verifiedLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

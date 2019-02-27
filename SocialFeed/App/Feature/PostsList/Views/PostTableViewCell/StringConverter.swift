@@ -11,16 +11,13 @@ import UIKit
 
 extension NSMutableAttributedString {
 
-    @objc func applyAttribute(text: String, range: NSRange) {
+    @objc func applyAttribute(text: String, range: NSRange, link: String) {
         let pos = range.location
         let len = range.length
         let fromIdx = text.unicodeScalars.index(text.unicodeScalars.startIndex, offsetBy: pos)
         let toIdx = text.unicodeScalars.index(fromIdx, offsetBy: len)
         let nsRange = NSRange(fromIdx..<toIdx, in: text)
-
-        addAttribute(NSAttributedString.Key.foregroundColor,
-                                value: UIColor.red,
-                                range: nsRange)
-        
+        addAttributes([.link: link], range: nsRange)
     }
+
 }
