@@ -38,7 +38,9 @@
 }
 
 - (void) refreshTable {
-    [self.viewModel fetchPosts:1];
+    currentPage = 1;
+    isRefresing = YES;
+    [self.viewModel fetchPosts: currentPage];
 }
 
 //MARK: - UITableViewDatasource & UITableViewDelegate
@@ -65,12 +67,39 @@
     return 100;
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if(self.tableView.contentOffset.y >= (self.tableView.contentSize.height - self.tableView.bounds.size.height))
+    {
+        if(isRefresing == NO){
+            isRefresing = YES;
+            currentPage++;
+            [self.viewModel fetchPosts: currentPage];
+        }
+    }
+}
+
 //MARK: - PostsListViewModelDelegate
 
-- (void)networkDidFetchPosts:(NSArray *)posts {
+- (void)networkDidFetchPosts:(NSArray *)posts count:(NSInteger)count {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
         [self.refreshControl  endRefreshing];
+        self->isRefresing = NO;
+
+        if (self->currentPage > 2) {
+            NSMutableArray *indexes = [[NSMutableArray alloc] init];
+            for (int i = 0; i < count; i++) {
+                NSIndexPath *index = [NSIndexPath indexPathForRow: self.viewModel.posts.count + (i - count)  inSection:0];
+                [indexes addObject: index];
+            }
+
+            [self.tableView beginUpdates];
+            [self.tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationNone];
+            [self.tableView endUpdates];
+        } else {
+            [self.tableView reloadData];
+        }
+
     });
 }
 

@@ -12,7 +12,6 @@
 @implementation PostTableViewCell
 
 - (void)setPost:(SFPost *)post {
-    NSLog(@"%@", post);
     self.nameLabel.text = post.author.name;
     self.usernameLabel.text = post.author.accountValue;
     self.dateLabel.text = [NSString stringWithFormat:@"%@", post.dateFormatted];

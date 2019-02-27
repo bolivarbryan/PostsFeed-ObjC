@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialFeed/App/Feature/PostsList/Views/PostTableViewCell/PostTableViewCell.m"
-            timestampString = "572941872.008461"
+            timestampString = "572944836.309315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SocialFeed/App/Feature/PostsList/Views/PostTableViewCell/PostTableViewCell.m"
-            timestampString = "572941872.008581"
+            timestampString = "572944836.309374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "-setPost:"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,14 +41,93 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SocialFeed/App/Feature/PostsList/Views/PostTableViewCell/PostTableViewCell.m"
-            timestampString = "572941872.0086451"
+            filePath = "SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+            timestampString = "572944836.309422"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "-setPost:"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+            timestampString = "572944836.309756"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-scrollViewDidScroll:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+            timestampString = "572944836.309996"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-networkDidFetchPosts:count:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[PostsListViewController networkDidFetchPosts:]"
+                  moduleName = "SocialFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryanabolivarm/Desktop/PostsFeed-ObjC/SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+                  timestampString = "572943613.809595"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[PostsListViewController networkDidFetchPosts:]_block_invoke"
+                  moduleName = "SocialFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryanabolivarm/Desktop/PostsFeed-ObjC/SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+                  timestampString = "572943613.815248"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_"
+                  moduleName = "SocialFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bryanabolivarm/Desktop/PostsFeed-ObjC/SocialFeed/App/Feature/PostsList/Controllers/PostsListViewController.m"
+                  timestampString = "572943613.823926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -10,18 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol PostsListViewModelDelegate<NSObject>
-    @required
+@required
 
-    - (void)networkDidFetchPosts:(NSArray *)posts;
+- (void)networkDidFetchPosts:(NSArray *)posts count:(NSInteger)count ;
 
-    @end
+@end
 
-@interface PostsListViewModel : NSObject
-    @property (nonatomic, retain) NSMutableArray *posts;
-    @property (nonatomic, weak) id<PostsListViewModelDelegate> delegate;
+@interface PostsListViewModel : NSObject{
+    int currentPage;
+}
+@property (nonatomic, retain) NSMutableArray *posts;
+@property (nonatomic, weak) id<PostsListViewModelDelegate> delegate;
 
-    - (void) fetchPosts:(NSInteger)page;
+- (void) fetchPosts:(int)page;
 
-    @end
+@end
 
 NS_ASSUME_NONNULL_END
