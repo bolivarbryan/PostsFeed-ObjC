@@ -12,6 +12,7 @@
 @implementation PostTableViewCell
 
 - (void)setPost:(SFPost *)post {
+    NSLog(@"%@", post);
     self.nameLabel.text = post.author.name;
     self.usernameLabel.text = post.author.accountValue;
     self.dateLabel.text = [NSString stringWithFormat:@"%@", post.dateFormatted];
@@ -31,8 +32,9 @@
                                }];
 
     [self updateImageFrameWithHeight: post.attachment.height width: post.attachment.width];
-    [self validateNetworkType];
+    [self validateNetworkType: post.network];
     [self applyTextAttributes: post];
+
 }
 
 - (void)awakeFromNib {
@@ -61,16 +63,13 @@
     [self layoutIfNeeded];
 }
 
--(void)validateNetworkType {
-
-    switch (self.post.networkValue) {
-        case Twitter:
-            [self.networkImageView setImage:[UIImage imageNamed:@"twitter"]];
-            break;
-        case Facebook:
-            [self.networkImageView setImage:[UIImage imageNamed:@"facebook"]];
-        case Instagram:
-            [self.networkImageView setImage:[UIImage imageNamed:@"instagram"]];
+-(void)validateNetworkType: (NSString *)networkString {
+    if ([networkString isEqualToString:@"facebook"]) {
+        [self.networkImageView setImage:[UIImage imageNamed:@"facebook"]];
+    } else if ([networkString isEqualToString:@"twitter"]) {
+        [self.networkImageView setImage:[UIImage imageNamed:@"twitter"]];
+    } else if ([networkString isEqualToString:@"instagram"]) {
+        [self.networkImageView setImage:[UIImage imageNamed:@"instagram"]];
     }
 }
 - (void)applyTextAttributes: (SFPost *)post {
