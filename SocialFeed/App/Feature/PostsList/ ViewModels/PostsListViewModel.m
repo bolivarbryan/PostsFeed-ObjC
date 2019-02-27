@@ -20,8 +20,9 @@
         return self;
     }
 
-    - (void)fetchPosts {
-        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://storage.googleapis.com/cdn-og-test-api/test-task/social/2.json"]
+    - (void)fetchPosts:(NSInteger)page {
+        NSString *urlString = [NSString stringWithFormat:@"https://storage.googleapis.com/cdn-og-test-api/test-task/social/%d.json", page];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]
                                                                cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                            timeoutInterval:10.0];
         [request setHTTPMethod:@"GET"];

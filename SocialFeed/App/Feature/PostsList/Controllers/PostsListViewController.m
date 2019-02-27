@@ -11,6 +11,7 @@
 
 @interface PostsListViewController ()
 @property (nonatomic, retain) PostsListViewModel *viewModel;
+@property(nonatomic, retain) UIRefreshControl *refreshControl;
 @end
 
 @implementation PostsListViewController
@@ -19,7 +20,25 @@
     [super viewDidLoad];
     self.viewModel = [[PostsListViewModel alloc] init];
     self.viewModel.delegate = self;
-    [self.viewModel fetchPosts];
+    [self refreshTable];
+    [self configureRefreshControl];
+}
+
+- (void)configureRefreshControl {
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    [self.refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+
+    if (@available(iOS 10.0, *)) {
+        self.tableView.refreshControl = self.refreshControl;
+    } else {
+        [self.tableView addSubview:self.refreshControl];
+    }
+
+    [self.tableView sendSubviewToBack: self.refreshControl];
+}
+
+- (void) refreshTable {
+    [self.viewModel fetchPosts:1];
 }
 
 //MARK: - UITableViewDatasource & UITableViewDelegate
@@ -51,6 +70,7 @@
 - (void)networkDidFetchPosts:(NSArray *)posts {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
+        [self.refreshControl  endRefreshing];
     });
 }
 

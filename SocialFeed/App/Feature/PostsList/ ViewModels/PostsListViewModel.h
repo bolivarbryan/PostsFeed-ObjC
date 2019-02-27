@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
     @property (nonatomic, retain) NSMutableArray *posts;
     @property (nonatomic, weak) id<PostsListViewModelDelegate> delegate;
 
-    - (void) fetchPosts;
+    - (void) fetchPosts:(NSInteger)page;
 
     @end
 
