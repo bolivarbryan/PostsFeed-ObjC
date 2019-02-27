@@ -2,6 +2,7 @@
 
 This Social App lists recent posts from a API. User can explore more information from each post by touching any link or hashtag.
 
+![](preview.gif)
 
 ## App Architecture
 
@@ -23,6 +24,6 @@ This Social App lists recent posts from a API. User can explore more information
 - [x] Optimize app performance
 - [x] Open Safari for links
 
-##Know issues
+## Know issues
 
 - There is a post which attached image size is different from the one returned from api, making cell layout looks weird. I've added a post-loading validation which could fix image resize issue, but some spacing persists.
