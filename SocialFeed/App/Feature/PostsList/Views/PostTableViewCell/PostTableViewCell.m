@@ -54,12 +54,12 @@
 
     switch (post.networkValue) {
         case Twitter:
-            self.networkImageView.backgroundColor = [UIColor blueColor];
+            [self.networkImageView setImage:[UIImage imageNamed:@"twitter"]];
             break;
         case Facebook:
-            self.networkImageView.backgroundColor = [UIColor purpleColor];
+            [self.networkImageView setImage:[UIImage imageNamed:@"facebook"]];
         case Instagram:
-            self.networkImageView.backgroundColor = [UIColor redColor];
+            [self.networkImageView setImage:[UIImage imageNamed:@"instagram"]];
     }
 
 }
